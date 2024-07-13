@@ -8,6 +8,166 @@
 <body>
     <script>
         document.write("hello world");
+        document.write("<h1>Moiz</h1>");
+// variable 
+
+        var a = 5 ;
+        var a = 10;
+        a = 50
+        document.write(a  + "<br>");
+
+        let x = 25;
+         x = 40;
+
+        document.write(x + "<br>");
+
+        const b = 65;
+        // const b =9; 
+        // b = 89;
+
+        document.write(b + "<br><br><br>");
+
+// Scopes of variables 
+
+        var l = 'ABC';
+        
+        function first() {
+            var l = 'hello';
+           document.write(l + "<br>"); 
+        }
+
+        function second(params) {
+            document.write(l + '<br><br>');
+        }
+
+        first();
+        second();
+
+// Console 
+
+console.time('abc');
+console.log('hello');
+console.error('moiz');
+console.warn('something is wrong');
+console.timeEnd('abc');
+
+// conditions 
+var a = 10;
+var c = 70 ;
+// if else 
+if (a == c) {
+    document.write('correct');
+}
+else{
+    document.write('wrong' + '<br><br>');
+}
+
+// else if 
+let M = "malir"; 
+
+if (a == 1 & c==70){
+    document.write('hello' + '<br><br><br>' );
+}
+else if(M == 'malir'){
+    document.write('may i com in ' + '<br><br><br>');
+}
+else{
+    document.write("bye bye" + '<br><br><br>' );
+}
+
+
+// condition ternary statement
+let z =  a == c ? "say done " : "say not yet " ; 
+  document.write(z + "<br><br><br>");  
+
+
+//  switch statement 
+
+let day = 5;
+// let day = Number( prompt("enter any number"));
+ switch (day) {
+    case 0:
+        document.write('monday');
+        break;
+    case 1:
+        document.write('tuesday');
+        break;
+    case 2:
+        document.write('wednesday');
+        break;
+    case 3:
+        document.write('Thursday');
+        break;
+    case 4:
+        document.write('friday');
+        break;
+    case 5:
+        document.write('saturday');
+        break;
+    case 6:
+        document.write('sunday');
+        break;
+ 
+    default:
+        document.write('invalid number');
+        break;
+ }
+
+ document.write("<br><br>");
+//  break and continue statement 
+
+
+for(let k = 1; k <= 10; k++) {
+   
+    if(k==5){
+        document.write("hey" + "<br>");
+        continue;
+    }
+    else if(k == 8 ){
+        document.write("hey"+ "<br>");
+        break;
+    }
+    document.write("NO :" + k + '<br>');
+}
+document.write("<br><br>");
+// data types check(
+    var e = 'moiz'
+    document.write(typeof(e));
+    
+    document.write("<br><br>");
+
+// Assignment operator 
+var a = 4;
+var c = 9;
+
+a+=c;
+document.write(a+"<br>");
+a-=c; /*a is updated to 13  and a will be update at each step*/  
+document.write(a+"<br>");
+a*=c;
+document.write(a+"<br>");
+a*=c;
+document.write(a+"<br>");
+a/=c;
+document.write(a+"<br>");
+document.write("<br><br>");
+
+// confirm box 
+let f = confirm("are you human");
+if(f){
+    alert("good");
+}
+else{
+    alert("its ok");
+}
+
+document.write("<br>");
+// function with param 
+
+function fun(a , b) {
+    document.write(a+b)
+}
+fun(5,7)
     </script>
 </body>
 </html>
