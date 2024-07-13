@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Share</title>
+
+</head>
+<style>
+    .container{
+        margin: auto;
+        height: 500px;
+        width: 80%;
+        
+    }
+    video{
+    border: 2px solid;
+    width: 80%;
+    height: 500px;
+        
+    }
+    button{
+        margin: 15px;
+        position: absolute;
+        left: 20%;
+        cursor: pointer;
+        border: none;
+        border-radius: 16px;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+    }
+</style>
+<body>
+    
+<div class="container">
+    <video id="screen" autoplay></video>
+</div>
+<button id="start">Share Screen</button>
+
+
+
+<script src="./screen_share.js"></script>
+</body>
+</html>
