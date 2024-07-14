@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body onresize="e()" >
+    
+<button onclick="a()" >onclick</button>
+<button ondblclick="b()" >ondblclick</button>
+<button onmouseenter="c()" >onmouseenter</button>
+<button oncontextmenu="d()" >oncontextmenu</button>
+<textarea  onscroll="f()" >
+    <p >Lorem, ipsum dolor  sit amet consectetur adipisicing elit. Sapiente nesciunt corrupti 
+        amet recusandae necessitatibus quis, nostrum et. Sit culpa consequuntur, incidunt molestiae velit autem repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet, quae atque culpa ea unde soluta accusamus. Dolorum quasi ratione blanditiis eum magni fuga praesentium deserunt, dignissimos distinctio asperiores, nobis eos natus quo molestias accusantium rem expedita tenetur omnis impedit illum. Natus quae fuga eius eos debitis laboriosam odio praesentium excepturi? Sapiente assumenda fugit cumque laudantium sed enim numquam dicta ratione adipisci minima dignissimos aut sunt necessitatibus non minus ducimus labore eius incidunt aspernatur quaerat commodi voluptatem ex, tempora quidem! Minima voluptates voluptatem vitae dignissimos doloribus quo similique assumenda consequuntur ducimus mollitia totam, veniam asperiores voluptas recusandae facilis quaerat facere..</p>
+
+</textarea>
+
+<script>
+function a() {
+    alert("working");
+}
+function b() {
+    alert("double click");
+}
+function c() {
+    alert("mouse");
+}
+function d() {
+    alert("right click");
+}
+function e(){
+    alert("resizing the screen");
+}
+function f(){
+    alert("start scrolling");
+    
+}
+</script>
+
+
+</body>
+</html>
