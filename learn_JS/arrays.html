@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <script>
+
+
+let a = [1, 2, 5, 6, 5, 4, 8, 4, 5, 6];
+
+// Check if 'a' is an array
+if (Array.isArray(a)) {
+    document.write("Variable 'a' is an array.<br>");
+} else {
+    document.write("Variable 'a' is not an array.<br>");
+}
+
+// Check the type of 'a'
+document.write("Type of 'a': " + typeof a + "<br>");
+
+// Output the array
+document.write("Contents of array 'a': " + a.join(", "));
+
+document.write("<br><br>")
+
+// -------------------
+
+let b = [1,2,5,6,5,4,8,4,5,6];
+
+for (let i = 0; i < b.length; i++) {
+    const element = b[i];
+    document.write(b[i] + "<br>");
+    
+}
+
+let c =[
+    [1,2,3,4,5,6,],
+    [1,2,3,4,5,6,],
+    [1,2,3,4,5,6,],
+    [1,2,3,4,5,6,],
+    [1,2,3,4,5,6,],
+];
+
+for (let j = 0; j < c.length; j++) {
+    for (let k = 0; k < c[j].length; k++) {
+        document.write(c[j][k]);
+    }
+    document.write('</BR>');
+    
+}
+document.write('</BR>');
+
+
+var array = [5,6,7,8,9,2,];
+console.log(array.sort());
+document.write(array[0]);
+
+document.write('</BR>');
+// modify and delete array 
+
+array[0] = "moiz";
+document.write(array);
+
+document.write('</BR>');
+
+delete array[2];
+document.write(array);
+
+
+document.write('</BR>');
+document.write('</BR>');
+// sort and reverse 
+
+var k = [7 , 9 , 8 , 3 , 2 , 1];
+document.write('array  ' + k +"<br>");
+document.write( "sorted " + k.sort()+"<br>");
+document.write("reverse " + k.reverse() + "<br>");
+
+// push and pop 
+k.push(10) 
+document.write("push " + k + "<br>");
+k.pop()
+document.write("pop " + k + "<br>");
+
+
+
+// shift and unshift
+k.shift()
+document.write("shift  " + k +"<br>" );
+k.unshift(3);
+document.write("unshift  " + k +"<br>" );
+
+// concat and join 
+
+var l = ["hello " , " moiz "];
+var m = k.concat(l);
+document.write("concat  " + m +"<br>" );
+
+
+var f = l.join("->");
+document.write("concat  " + f +"<br>" );
+
+
+// slice and splice 
+a = k.slice(2);
+document.write("slice  " + a +"<br>" );
+a = k.slice(-2);
+document.write("slice  " + a +"<br>" );
+
+
+//  splice syntax ->     array.splice(startindex , deleteCount , replaceItem1 , Item2 , ......)
+
+var k = [5 , 8 , 9 , 6 , 3 , 7 ];
+k.splice(2 ,3 , 'moiz' , "kashif" , "umar ");
+document.write("splice  " + k +"<br>" );
+
+// isArray 
+
+k = "moiz"
+
+b = Array.isArray(a);
+document.write(b + "<br>");
+c = Array.isArray(k);
+document.write(c + "<br>");
+
+// indexof
+var k = [5 , 8 , 9 , 6 , 3 , 7 ];
+a = k.indexOf(8);
+document.write( a + "<br>");
+
+// lastindex 
+var k = [5 , 8 , 5 , 6 , 5 , 7 ];
+a = k.lastIndexOf(5)
+document.write( a + "<br>");
+
+// toString 
+document.write( k + "<br>");
+document.write( typeof(k));
+c = k.toString();
+
+document.write("<br>"+ typeof(c));
+
+document.write('</BR>');
+// fill 
+
+k.fill("k" , 1 , 3);
+document.write( k + "<br>");
+
+
+
+
+</script>
+</body>
+</html>
