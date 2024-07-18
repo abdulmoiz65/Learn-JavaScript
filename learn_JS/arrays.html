@@ -196,9 +196,51 @@ var d = k.some(function(element){
 })
 document.write(d + "<br>" );
 
+// every 
+
+var d = k.every(function(element){
+    return element > 5 ;
+})
+document.write(d + "<br>" );
+
+var k = [ 9 , 8 , 6 , 7 , 8 ];
+var d = k.every(function(element){
+    return element > 5 ;
+})
+document.write(d + "<br>");
+
+// find 
+    // first element in the array 
+
+var d = k.find(function(element){
+    return element >  10 ;
+})
+document.write(d + "<br>");
+
+var d = k.find(function(element){
+    return element   > 5  ;
+})
+document.write(d + "<br>");
+
+// FindIndex 
+
+var d = k.findIndex(function(element){
+    return element   > 5  ;
+})
+document.write(d + "<br>");
 
 
+var d = k.findIndex(function(element){
+    return element  > 10  ;
+})
+document.write(d + "<br>");
 
+// Filter 
+
+var d = k.filter(function(element){
+    return element  > 7  ;
+})
+document.write(d + "<br>");
 
 </script>
 </body>
