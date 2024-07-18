@@ -146,8 +146,56 @@ document.write("<br>"+ typeof(c));
 document.write('</BR>');
 // fill 
 
-k.fill("k" , 1 , 3);
+
+k.fill("A");
 document.write( k + "<br>");
+
+var k = [5 , 8 , 5 , 6 , 5 , 7 ];
+k.fill("moiz" , 2 , 4);
+document.write( k + "<br>");
+
+// slice and fill compare 
+
+k.splice(2 , 3 , "moiz" , "raghib" , "saif");
+
+// k.fill("m");
+
+// k.fill("k" , 1 , 3);
+document.write( k + "<br>");
+
+
+// include method 
+
+var k = ["mango" , "apple" , "banana"];
+var d = k.includes("grapes");
+document.write(d + "<br>");
+
+var d = k.includes("banana");
+document.write(d + "<br>");
+
+var k = [5 , 8 , 5 , 6 , 5 , 7 ];
+var d = k.includes(5);
+document.write(d + "<br>");
+
+
+
+var d = k.includes(8,2);
+// here 2 is the index and it will start searching from that index 
+document.write(d + "<br>");
+document.write( "<br> <br>");
+
+
+// SOME 
+var d = k.some(function(element){
+return element > 9;
+})
+document.write(d + "<br>" );
+
+var d = k.some(function(element){
+    return element % 2 == 0 ;
+})
+document.write(d + "<br>" );
+
 
 
 
