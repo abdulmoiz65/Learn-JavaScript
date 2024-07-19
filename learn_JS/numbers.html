@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numbers</title>
+</head>
+<body>
+    <script>
+        // Number 
+        var a  = "5" ; 
+        var b = Number(a);
+        document.write(typeof(b));
+        document.write("<br><br>");
+        
+        // parseInt 
+        var a  = "56.55" ; 
+        var b = parseInt(a);
+        document.write(b);
+        document.write("<br><br>");
+        
+        // parseFloat
+        var a  = "10.50 years" ; 
+        var b = parseFloat(a);
+        document.write(b);
+        document.write("<br><br>");
+
+        // isFinite
+        var a  = "10" ; 
+        var b = isFinite(a);
+        document.write(b);
+        document.write("<br><br>");
+       
+        
+        var a  = "10 hello" ; 
+        var b = isFinite(a);
+        document.write(b);
+        document.write("<br><br>");
+
+        // isInteger
+        var a  = 10 ; 
+        var b = Number.isInteger(a);
+        document.write(b);
+        document.write("<br><br>");
+
+        var a  = '10' ; 
+        var b = Number.isInteger(a);
+        document.write(b);
+        document.write("<br><br>");
+
+        // toFixed 
+        var a  = 25.645654 ; 
+        var b = a.toFixed(3);
+        document.write(b);
+        document.write("<br><br>");
+
+
+
+    </script>
+</body>
+</html>
