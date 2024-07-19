@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    
+<script>
+    // length 
+    var a = "Hello World";
+    var b = a.length;
+    document.write(b); 
+    
+    document.write("<br><br>");
+    // toLowerCase
+    var b = a.toLowerCase();
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // toUpperCase
+    var b = a.toUpperCase();
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // includes
+    var b = a.includes('f');
+    document.write(b); 
+    document.write("<br><br>");
+
+    var b = a.includes('H');
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // startsWith
+    var b = a.startsWith('h');
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // endsWith 
+    var b = a.endsWith('h');
+    document.write(b); 
+    document.write("<br><br>");
+    
+    var b = a.endsWith("d");
+    document.write(b); 
+    document.write("<br><br>");
+    
+
+    // search  returns the index value start with "0" if not found return -1 
+    var b = a.search("H");
+    document.write(b); 
+    document.write("<br><br>");
+    
+    var b = a.search("k");
+    document.write(b); 
+    document.write("<br><br>");
+
+    // indexof  returns the index value start with "0" if not found return -1 
+    var b = a.indexOf("l");
+    document.write(b); 
+    document.write("<br><br>");
+    
+    var b = a.indexOf("k");
+    document.write(b); 
+    document.write("<br><br>");
+
+    // lastIndexof  returns the index value start with "0" if not found return -1 
+    var b = a.lastIndexOf("l");
+    document.write(b); 
+    document.write("<br><br>");
+   
+    var b = a.lastIndexOf("k");
+    document.write(b); 
+    document.write("<br><br>");
+
+
+    
+    // match 
+    
+    var c = "The rain in Spain stays mAinly in the plain";
+    var b = c.match(/ain/);
+    document.write(b); 
+    document.write("<br><br>");
+
+    
+    var b = c.match(/ain/g);
+    document.write(b); 
+    document.write("<br><br>");
+
+    
+    var b = c.match(/ain/gi);
+    document.write(b); 
+    document.write("<br><br>");
+
+    // replace 
+
+    var b = c.replace("rain" , "snow");
+    document.write(b); 
+    document.write("<br><br>");
+
+    var b = c.replace(/in/g , "MOIZ");
+    document.write(b); 
+    document.write("<br><br>");
+
+    // charAt 
+    var b = c.charAt(20);
+    document.write(b); 
+    document.write("<br><br>");
+
+    
+    // charCodeAt 
+        // it returns the ascii code of "a" because we have "a" At index 20 
+    var b = c.charCodeAt(20);
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // trim 
+    var c = "      it returns the ascii code of a because we have a At index 20    ";
+    var b = c.trim();
+    alert(b);
+    
+    
+    // fromCharCode
+        // it returns the Element on that code 
+    var b = String.fromCharCode(97);
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // slice 
+    var c = "The rain in Spain stays mAinly in the plain";
+    var b = c.slice(6);
+    document.write(b); 
+    document.write("<br><br>");
+    
+    var b = c.slice(6 , 15);
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // substr 
+    var b = c.substr(6 , 15);
+    document.write(b); 
+    document.write("<br><br>");
+    
+
+    // repeat 
+    var c = "The rain in Spain stays mAinly in the plain<br>";
+    var b = c.repeat(10);
+    document.write(b); 
+    document.write("<br><br>");
+   
+    // split 
+    var b = c.split("i");
+    document.write(b); 
+    document.write("<br><br>");
+    
+    // toString 
+    var a = 5 ; 
+    var b = a.toString();
+    document.write(typeof(b)); 
+    document.write("<br><br>");
+    
+
+    
+
+
+</script>
+
+</body>
+</html>
