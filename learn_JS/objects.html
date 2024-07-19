@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    
+<script>
+
+var objects = {
+    name : "Abdul Moiz",
+    fname : "Abdul Hafeez",
+    age : 20, 
+
+// array in object 
+
+    foods :["biryani" , "nihari" , "karahi"],
+
+    // functions in object
+
+    MyName : function() {
+       return "moiz";
+    } , 
+    
+    check : function(){
+        return  this.name + " " + this.fname + " " + this.age ;
+    }
+
+}
+
+document.write(objects + "<br>");
+document.write(objects.name + "<br>");
+document.write(objects.foods + "<br>" );
+document.write(objects.MyName() + "<br>");
+document.write(objects.check());
+
+
+document.write("<br><br><br>");
+
+
+var a = new Object;
+
+a.name = "ali";
+a.job = "developer";
+a.gender = "male";
+
+document.write(a.name + "<br>");
+
+
+// nested object 
+
+var a = {
+    name : "moiz",
+    fname : "hafeez",
+    address :{
+        area : "gulshan",
+        block : 13 ,
+
+    }
+};
+
+document.write(a . address . area);
+document.write("<br><br>");
+// array object 
+    // similar to json 
+
+var a = [
+    {
+        name :"moiz",
+        age : 20
+        },
+    {
+        name :"ali",
+        age : 20
+        },
+    {
+        name :"hussain",
+        age : 20
+        },
+]
+
+for(var i = 0 ; i <=a.length ; i++){
+    document.write(a[i].name + " "  +  a[i].age +  "<br>" );
+}
+// document.write();
+</script>
+
+
+</body>
+</html>
