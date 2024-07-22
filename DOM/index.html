@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>MOIZ</h1>
+            <button onclick="ChangeName()" >click it</button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <main>
+                <h2>Sub Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Incidunt, veniam elus architecto ullam cupiditate quam aspernatur quis facilis tempora vel aspernatur, consequatur, laborum, explicabo consectetur minima beatae perferendis impedit accusantium ex animi odio quisquam sint pariatur minus et illum veniam reprehenderit rerum inventore sed odit officiis voluptates? Dolore, perferendis, minus eum debitis vero ipsum tempora voluptate nam ut autem itaque provident consequatur nobis quia libero! Magni, molestias, laborum architecto natus inventore facere quis pariatur quia quos quasi quo dicta dolores. Deleniti, facere, fugit sed minus ducimus ut modi voluptatum saepe praesentium saepe aperiam nam quidem laboriosam assumenda voluptate vitae inventore et quibusdam!</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Modi nihil in animi necessitatibus.</li>
+                    <li>Consectetur adipiscing elit.</li>
+                    <li>Modi nihil in animi dolore natus.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsa, quam.</p>
+            </main>
+            <aside>
+                <h3>Home</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Gallery</li>
+                    <li>Contact Us</li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            MOIZ
+        </footer>
+    </div>
+
+<script>
+    
+    
+    function ChangeName( ) {
+         document.getElementById("header").innerText = "My webb";
+    }
+
+
+    // selecting element 
+    var a ;
+    a = document.querySelector("nav");
+    a.style.backgroundColor = "red";
+    
+
+    // change HTML and css
+    var b ;
+    b = document.querySelector("h2");
+    b.innerText = "PortFOlio";
+    b.style.color = "orange";
+    b.style.fontSize = "50px";
+    b.style.fontWeight = "bold";
+    b.style.textAlign = "center";
+
+    var c ;
+    c = document.querySelector("p");
+    a.addEventListener("mouseover",function(){
+        c.style.color = "red";
+        
+    })
+
+</script>
+
+</body>
+</html>
